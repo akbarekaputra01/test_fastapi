@@ -23,6 +23,3 @@ app.add_middleware(
 app.include_router(auth_router, prefix="/api")        # prefix /api untuk login
 app.include_router(motivation_router, prefix="/api")  # prefix /api untuk motivation
 
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
